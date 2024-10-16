@@ -25,7 +25,7 @@ import (
 )
 
 func setupTestDB() *sql.DB {
-	db, err := sql.Open("mysql", "root:Pokemon18*@tcp(localhost:3306)/golang_restful_api_test")
+	db, err := sql.Open("mysql", "root:123@tcp(localhost:3306)/golang_restful_api_test")
 	helper.PanicIfError(err)
 
 	db.SetMaxIdleConns(5)
